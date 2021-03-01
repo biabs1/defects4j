@@ -73,7 +73,7 @@ system("mkdir -p $LOG_DIR");
 # Open temporary log file
 my $LOG = Log::create_log("$TMP_DIR/". basename($0) . ".log");
 $LOG->log_time("Start mutation analysis");
-`mkdir -p $LOG_DIR/"dev"`;
+#`mkdir -p $LOG_DIR/"dev"`;
 
 _run_mutation_dev($VID);
 
@@ -83,7 +83,7 @@ $LOG->close();
 
 # Copy log file and clean up temporary directory
 system("cat $LOG->{file_name} >> $LOG_FILE") == 0 or die "Cannot copy log file";
-system("rm -rf $TMP_DIR");
+#system("rm -rf $TMP_DIR") unless $DEBUG;
 
 
 # Run mutation analysis for tests on the version they were created for.
