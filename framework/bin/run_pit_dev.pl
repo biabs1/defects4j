@@ -98,6 +98,8 @@ sub _run_mutation_dev {
     my $root = "$TMP_DIR/${vid}";
     $project->{prog_root} = "$root";
     $project->checkout_vid($vid) or die "Checkout failed";
+    
+    $LOG->log_msg(" - Executing dev test suite of project: $project");
 
     my $mut_log = "$TMP_DIR/.mutation.log"; `>$mut_log`;
   
