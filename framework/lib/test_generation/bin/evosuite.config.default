@@ -13,3 +13,4 @@
 -Dmax_size=2000
 -Duse_separate_classloader=false
 -Doutput_variables=TARGET_CLASS,criterion,Size,Length
+-Dassertion_timeout=300
