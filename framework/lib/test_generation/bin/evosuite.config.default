@@ -3,7 +3,7 @@
 #
 # All commented lines are ignored.
 #
--criterion weakmutation
+-criterion strongmutation
 -Dstopping_condition=MaxTime
 -Dshow_progress=false
 -Djunit_check=false
