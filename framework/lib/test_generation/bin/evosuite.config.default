@@ -3,7 +3,7 @@
 #
 # All commented lines are ignored.
 #
--criterion strongmutation
+-criterion branch
 -Dstopping_condition=MaxTime
 -Dshow_progress=false
 -Djunit_check=false
